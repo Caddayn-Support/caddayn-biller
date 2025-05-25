@@ -8,4 +8,5 @@ We’re building ERP Solutions to empower retailers with modern, cloud-based too
 
 👉 [Join the community on GitHub Discussions](https://github.com/Retail-Facts/erp-solutions/discussions)
 
-![Caddayn ERP Landing Page](https://lh6.googleusercontent.com/C1cUzDxW6ROZBePHY0cA_FDtknamAuldZFzHCSEHn7bdaWRufO4_IEjtGwQqLls67XuDGbvrANV6pe4frEF9xaXz66RW3XAxH-VOHQpbSnhxVC85N4GzjRWFVUNPoRyLDQ=w1280)
+
+![image](https://github.com/user-attachments/assets/df071bef-c388-4ff1-9916-f63ef936c6d3)
