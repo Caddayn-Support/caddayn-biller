@@ -1,6 +1,6 @@
 [![Discussions](https://img.shields.io/github/discussions/Retail-Facts/erp-solutions?style=for-the-badge)](https://github.com/Retail-Facts/erp-solutions/discussions)
 
-## 💬 Join the Retail Facts Community
+## 💬 Join the Caddayn Support Community
 
 We’re building ERP Solutions to empower retailers with modern, cloud-based tools.
 
