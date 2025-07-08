@@ -1,3 +1,4 @@
+<meta name="google-site-verification" content="z3sBbrGOGOVbJG7RiM75LSpeXZSkybCgaJaGIrdaeFY" />
 [![Discussions](https://img.shields.io/github/discussions/Retail-Facts/erp-solutions?style=for-the-badge)](https://github.com/Retail-Facts/erp-solutions/discussions)
 
 ## 💬 Join the Caddayn Support Community
