@@ -6,57 +6,75 @@
     <title>Caddayn Biller - Home</title>
     <meta name="description" content="Caddayn Biller: Modern ERP Solutions for Retailers">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
+    <link rel="stylesheet" href="theme.css">
     <style>
-        body {
-            font-family: 'Inter', Arial, sans-serif;
-            background: #f8fafc;
-            margin: 0;
-            padding: 0;
-            color: #22223b;
-        }
         header {
-            background: #22223b;
-            color: #fff;
-            padding: 2rem 0 1rem 0;
             text-align: center;
+            padding: 2.5rem 0 1.5rem 0;
+            position: relative;
+            z-index: 1;
         }
-        header h1 {
-            margin: 0 0 0.5rem 0;
-            font-size: 2.5rem;
-            letter-spacing: 1px;
+        .logo {
+            margin-bottom: 1.2rem;
         }
-        header p {
-            margin: 0 0 1rem 0;
-            font-size: 1.2rem;
+        .logo img {
+            width: 320px;
+            max-width: 90vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13));
+            transition: transform 0.2s;
         }
-        .cta {
-            display: inline-block;
-            margin: 1rem 0;
-            padding: 0.75rem 2rem;
-            background: #4f8cff;
-            color: #fff;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: 700;
-            transition: background 0.2s;
+        .logo img:hover {
+            transform: scale(1.04) rotate(-2deg);
         }
-        .cta:hover {
-            background: #2563eb;
-        }
-        main {
-            max-width: 600px;
-            margin: 2rem auto;
+        .container {
             background: #fff;
+            max-width: 900px;
+            margin: 2rem auto;
+            border-radius: 18px;
+            box-shadow: 0 4px 32px rgba(34,34,59,0.10);
+            padding: 2.5rem 2rem;
+            position: relative;
+            z-index: 1;
+        }
+        h1, h2 {
+            color: #3a2fd6;
+            margin-top: 0;
+        }
+        a.button, .cta {
+            display: inline-block;
+            background: linear-gradient(90deg, #3a2fd6 60%, #5b4be0 100%);
+            color: #fff;
+            padding: 0.85em 2em;
             border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(34,34,59,0.06);
-            padding: 2rem;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1.5em;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+        }
+        a.button:hover, .cta:hover {
+            background: linear-gradient(90deg, #2a1fb6 60%, #4b3be0 100%);
+            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
         }
         .search-container {
             margin: 2rem 0;
             text-align: center;
         }
+        .search-container form {
+            display: flex;
+            justify-content: center;
+            max-width: 700px;
+            margin: 0 auto;
+        }
         .search-container input[type="text"] {
             width: 70%;
+            min-width: 220px;
+            max-width: 600px;
             padding: 0.75rem;
             border: 1px solid #cbd5e1;
             border-radius: 4px 0 0 4px;
@@ -79,6 +97,9 @@
         .search-results {
             margin-top: 1.5rem;
             text-align: left;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
         }
         .search-results ul {
             list-style: none;
@@ -98,25 +119,73 @@
         .search-results a:hover {
             text-decoration: underline;
         }
-        @media (max-width: 600px) {
-            main {
-                padding: 1rem;
+        .pagination {
+            text-align: center;
+            margin: 1.5rem 0 0.5rem 0;
+        }
+        .pagination button {
+            background: #f6f8ff;
+            border: 1px solid #cbd5e1;
+            color: #3a2fd6;
+            padding: 0.5em 1.1em;
+            margin: 0 0.2em;
+            border-radius: 4px;
+            font-size: 1em;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+        }
+        .pagination button:hover {
+            background: #3a2fd6;
+            color: #fff;
+        }
+        @media (max-width: 1000px) {
+            .container {
+                max-width: 98vw;
+                padding: 1.5rem 0.5rem;
             }
-            .search-container input[type="text"] {
-                width: 60%;
+            .search-container form,
+            .search-results {
+                max-width: 98vw;
+            }
+        }
+        @media (max-width: 700px) {
+            .container { padding: 1rem; }
+            .search-container input[type="text"] { width: 60%; max-width: 98vw; }
+            .logo img { width: 180px; }
+            .search-results { padding: 0 0.5rem; }
+        }
+        @media (max-width: 500px) {
+            .search-container form {
+                flex-direction: column;
+                align-items: stretch;
+            }
+            .search-container input[type="text"], .search-container button {
+                width: 100%;
+                border-radius: 4px;
+                margin-bottom: 0.5rem;
+            }
+            .search-container button {
+                border-radius: 4px;
             }
         }
     </style>
-    <!-- Lunar.js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/lunar-search@2.2.0/dist/lunar.min.js"></script>
+    <!-- Lunr.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/lunr/lunr.min.js"></script>
 </head>
 <body>
+    <!-- Animated background circles -->
+    <div class="bg-circles">
+        <div class="bg-circle c1"></div>
+        <div class="bg-circle c2"></div>
+        <div class="bg-circle c3"></div>
+        <div class="bg-circle c4"></div>
+    </div>
     <header>
-        <h1>Caddayn Biller</h1>
-        <p>Empowering Retailers with Modern, Cloud-Based ERP Solutions</p>
-        <a class="cta" href="https://www.caddayn.com" target="_blank" rel="noopener">Visit Official Website</a>
+        <div class="logo">
+            <img src="caddayn-logo.png" alt="Caddayn Logo">
+        </div>
     </header>
-    <main>
+    <div class="container">
         <section class="search-container">
             <h2>Search Support Content</h2>
             <form id="search-form" autocomplete="off">
@@ -124,6 +193,7 @@
                 <button type="submit">Search</button>
             </form>
             <div class="search-results" id="search-results"></div>
+            <div class="pagination" id="pagination"></div>
             <p style="font-size:0.95rem;color:#64748b;margin-top:0.5rem;">
                 Search is local and covers all documentation pages in this repository.
             </p>
@@ -134,16 +204,10 @@
                 Need help? Join our <a href="https://github.com/Retail-Facts/erp-solutions/discussions" target="_blank" rel="noopener">GitHub Discussions</a> for support and to connect with the Caddayn team.
             </p>
         </section>
-    </main>
+    </div>
     <script>
         // List of searchable pages in the repo
         const pages = [
-            {
-                id: 1,
-                title: "Home",
-                url: "index.html",
-                content: "Welcome to Caddayn Biller. Empowering Retailers with Modern, Cloud-Based ERP Solutions. Support, documentation, guides, FAQs."
-            },
             {
                 id: 2,
                 title: "How to Manage Products with Multiple Variants in Caddayn Biller",
@@ -159,15 +223,47 @@
             // Add more pages here as you add more HTML files to the repo
         ];
 
-        // Build Lunar index
-        const builder = new lunar.Builder();
-        builder.ref('id');
-        builder.field('title', { boost: 10 });
-        builder.field('content');
-        pages.forEach(page => builder.add(page));
-        const idx = builder.build();
+        const PAGE_SIZE = 10;
+        let idx, currentResults = [], currentPage = 1;
 
-        // Render results helper
+        document.addEventListener('DOMContentLoaded', function() {
+            idx = lunr(function () {
+                this.ref('id');
+                this.field('title', { boost: 10 });
+                this.field('content');
+                pages.forEach(function (page) {
+                    this.add(page);
+                }, this);
+            });
+
+            currentResults = pages.slice();
+            renderResultsPage(1);
+
+            // Attach search handler
+            const form = document.getElementById('search-form');
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+                const query = document.getElementById('search-input').value.trim();
+                if (!query) {
+                    currentResults = pages.slice();
+                } else {
+                    currentResults = idx.search(query).map(res => {
+                        return pages.find(p => p.id.toString() === res.ref);
+                    }).filter(Boolean);
+                }
+                renderResultsPage(1);
+            });
+        });
+
+        function renderResultsPage(page) {
+            currentPage = page;
+            const start = (page - 1) * PAGE_SIZE;
+            const end = start + PAGE_SIZE;
+            const pagedResults = currentResults.slice(start, end);
+            renderResults(pagedResults);
+            renderPagination(currentResults.length, page);
+        }
+
         function renderResults(results) {
             const resultsDiv = document.getElementById('search-results');
             resultsDiv.innerHTML = '';
@@ -177,31 +273,43 @@
             }
             const ul = document.createElement('ul');
             results.forEach(page => {
+                if (!page) return;
                 const li = document.createElement('li');
-                li.innerHTML = `<a href="${page.url}" target="_blank">${page.title}</a><br><span style="font-size:0.95rem;color:#64748b;">${page.content.substring(0, 120)}...</span>`;
+                li.innerHTML = `<a href="${page.url}">${page.title}</a><br><span style="font-size:0.95rem;color:#64748b;">${page.content.substring(0, 120)}...</span>`;
                 ul.appendChild(li);
             });
             resultsDiv.appendChild(ul);
         }
 
-        // Show first 10 pages by default
-        document.addEventListener('DOMContentLoaded', function() {
-            renderResults(pages.slice(0, 10));
-        });
+        function renderPagination(total, page) {
+            const paginationDiv = document.getElementById('pagination');
+            paginationDiv.innerHTML = '';
+            const totalPages = Math.max(1, Math.ceil(total / PAGE_SIZE)); // Always at least 1
 
-        // Search handler
-        document.getElementById('search-form').addEventListener('submit', function(e) {
-            e.preventDefault();
-            const query = document.getElementById('search-input').value.trim();
-            if (!query) {
-                renderResults(pages.slice(0, 10));
-                return;
+            let html = '';
+            if (totalPages > 1 && page > 1) {
+                html += `<button onclick="gotoPage(${page - 1})">&laquo; Prev</button>`;
             }
-            const results = idx.search(query).map(res => {
-                return pages.find(p => p.id === res.ref);
-            });
-            renderResults(results);
-        });
+            for (let i = 1; i <= totalPages; i++) {
+                if (totalPages > 1) {
+                    html += `<button onclick="gotoPage(${i})"${i === page ? ' style="font-weight:bold;background:#3a2fd6;color:#fff;"' : ''}>${i}</button>`;
+                }
+            }
+            if (totalPages > 1 && page < totalPages) {
+                html += `<button onclick="gotoPage(${page + 1})">Next &raquo;</button>`;
+            }
+            // Always show page info
+            html += `<div style="margin-top:0.8em;font-size:1em;color:#3a2fd6;">
+                        Page <strong>${page}</strong> of <strong>${totalPages}</strong>
+                     </div>`;
+            paginationDiv.innerHTML = html;
+        }
+
+        // Expose gotoPage globally for inline onclick
+        window.gotoPage = function(page) {
+            renderResultsPage(page);
+            window.scrollTo({ top: document.getElementById('search-results').offsetTop - 40, behavior: 'smooth' });
+        };
     </script>
 </body>
 </html>

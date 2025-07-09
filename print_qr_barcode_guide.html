@@ -8,6 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Step-by-step guide on how to print QR codes or barcodes for your products using Caddayn Biller. Learn about purchase entry, sticker printers, and troubleshooting.">
     <meta name="keywords" content="Caddayn Biller, print QR code, print barcode, barcode printing, QR code printing, sticker printer, inventory management, purchase entry, label printing">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
+    <link rel="stylesheet" href="theme.css">
     <style>
         body {
             font-family: 'Segoe UI', Arial, sans-serif;
@@ -17,14 +19,15 @@
             color: #222;
         }
         .container {
-            max-width: 800px;
-            margin: 2em auto;
             background: #fff;
-            border-radius: 16px;
+            max-width: 900px;
+            margin: 2em auto;
+            border-radius: 18px;
             box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
             padding: 2.5em 2em;
             position: relative;
             overflow: hidden;
+            z-index: 1;
         }
         .container::before {
             content: "";
@@ -96,6 +99,15 @@
             background: linear-gradient(90deg, #1e355d 60%, #1976d2 100%);
             box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
         }
+        @media (max-width: 1000px) {
+            .container {
+                max-width: 98vw;
+                padding: 1.5rem 0.5rem;
+            }
+        }
+        @media (max-width: 700px) {
+            .container { padding: 1rem; }
+        }
         @media (max-width: 600px) {
             .container {
                 padding: 1em;
@@ -107,6 +119,13 @@
     </style>
 </head>
 <body>
+    <!-- Animated background circles -->
+    <div class="bg-circles">
+        <div class="bg-circle c1"></div>
+        <div class="bg-circle c2"></div>
+        <div class="bg-circle c3"></div>
+        <div class="bg-circle c4"></div>
+    </div>
     <div class="container">
         <header>
             <h1>How to Print QR Codes or Barcodes in Caddayn Biller</h1>
