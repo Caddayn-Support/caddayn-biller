@@ -1,0 +1,176 @@
+<!-- Title: Managing Products with Multiple Variants in Caddayn Biller -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Manage Products with Multiple Variants in Caddayn Biller</title>
+    <meta name="description" content="Learn how to efficiently manage products of the same brand with multiple subdivisions such as size, weight, and color in Caddayn Biller.">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #e3f0ff 0%, #ffffff 100%);
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+            padding: 2.5em 2em;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            top: -60px;
+            right: -60px;
+            width: 180px;
+            height: 180px;
+            background: radial-gradient(circle, #e3f2fd 60%, transparent 100%);
+            z-index: 0;
+        }
+        h1 {
+            color: #2a4d8f;
+            text-align: center;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+            font-size: 2.2em;
+            position: relative;
+            z-index: 1;
+        }
+        h2 {
+            color: #1e7e34;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+            position: relative;
+            z-index: 1;
+        }
+        ol, ul {
+            margin-left: 1.5em;
+            position: relative;
+            z-index: 1;
+        }
+        .example {
+            background: #eef3fa;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            border-left: 5px solid #2a4d8f;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .step-guide {
+            background: #f9fbe7;
+            border-left: 5px solid #1e7e34;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .benefits-list {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 0.4em;
+            color: #2a4d8f;
+        }
+        a.button {
+            display: inline-block;
+            background: linear-gradient(90deg, #2a4d8f 60%, #1976d2 100%);
+            color: #fff;
+            padding: 0.85em 2em;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1.5em;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+        }
+        a.button:hover {
+            background: linear-gradient(90deg, #1e355d 60%, #1976d2 100%);
+            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1em;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How to Manage Products with Multiple Variants in Caddayn Biller</h1>
+        <p style="font-size:1.15em;">
+            Managing products that belong to the same brand but have multiple subdivisions—such as size, weight, color, or other properties—can be challenging. <strong>Caddayn Biller</strong> makes this process simple and efficient.
+        </p>
+        <h2>Scenario</h2>
+        <p>
+            <span class="icon">❓</span>
+            <strong>Question:</strong> How do I manage different products of the same brand that have multiple subdivisions based on size, weight, color, etc.?
+        </p>
+        <h2>Solution</h2>
+        <ol>
+            <li>
+                <strong>Create Logical Product Variants:</strong>
+                <br>
+                For each unique combination of properties (size, weight, color, etc.), create a separate product entry under the same brand. Use logical and descriptive names to easily identify each variant.
+            </li>
+            <li>
+                <strong>Example Naming Convention:</strong>
+                <div class="example">
+                    <strong>Brand:</strong> ABC Shoes<br>
+                    <strong>Variants:</strong>
+                    <ul>
+                        <li><span class="icon">👟</span>ABC Shoes - Size 8 - Red</li>
+                        <li><span class="icon">👟</span>ABC Shoes - Size 8 - Blue</li>
+                        <li><span class="icon">👟</span>ABC Shoes - Size 9 - Red</li>
+                        <li><span class="icon">👟</span>ABC Shoes - Size 9 - Blue</li>
+                    </ul>
+                </div>
+            </li>
+            <li>
+                <strong>Benefits:</strong>
+                <div class="benefits-list">
+                    <ul>
+                        <li><span class="icon">📊</span>Each product variant can be tracked individually for sales and purchases.</li>
+                        <li><span class="icon">📈</span>Reports can be generated for each item, giving you detailed insights.</li>
+                        <li><span class="icon">📦</span>Inventory management becomes more accurate and organized.</li>
+                    </ul>
+                </div>
+            </li>
+        </ol>
+        <h2>Step-by-Step Guide</h2>
+        <div class="step-guide">
+            <ol>
+                <li>Go to the <strong>Master Data</strong> section in your Caddayn Biller dashboard.</li>
+                <li>Click on <strong>Items</strong>.</li>
+                <li>Click <strong>Create</strong> to add a new item.</li>
+                <li>In the item creation form, select the appropriate <strong>Brand</strong> from the dropdown.</li>
+                <li>Enter the product name using a logical naming convention (e.g., "ABC Shoes - Size 8 - Red").</li>
+                <li>Fill in other details such as SKU, price, and stock information.</li>
+                <li>Repeat for each variant you need to manage.</li>
+            </ol>
+        </div>
+        <h2>Conclusion</h2>
+        <p>
+            By creating separate product entries for each variant, you can easily manage, track, and report on all your products, no matter how many subdivisions they have. <strong>Caddayn Biller</strong> provides the flexibility and tools you need for efficient product management.
+        </p>
+        <a href="https://www.caddayn.com/products/caddayn-erp" target="_blank" class="button">Learn more about Caddayn Biller</a>
+    </div>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!-- Title: How to Print QR Codes or Barcodes in Caddayn Biller -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Print QR Codes or Barcodes in Caddayn Biller</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Step-by-step guide on how to print QR codes or barcodes for your products using Caddayn Biller. Learn about purchase entry, sticker printers, and troubleshooting.">
+    <meta name="keywords" content="Caddayn Biller, print QR code, print barcode, barcode printing, QR code printing, sticker printer, inventory management, purchase entry, label printing">
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(120deg, #e3f0ff 0%, #ffffff 100%);
+            color: #222;
+        }
+        .container {
+            max-width: 800px;
+            margin: 2em auto;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
+            padding: 2.5em 2em;
+            position: relative;
+            overflow: hidden;
+        }
+        .container::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 0;
+            border-radius: 16px;
+            /* Even color spread from all corners, white at corners, color toward center */
+            background: radial-gradient(circle at 50% 50%,
+                transparent 60%,
+                #2a4d8f 75deg 70%,
+                #1e7e34 160deg 80%,
+                #1976d2 250deg 90%,
+                #e3f0ff 360deg 100%
+            ),
+            radial-gradient(circle at top left, #fff 60%, transparent 100%),
+            radial-gradient(circle at top right, #fff 60%, transparent 100%),
+            radial-gradient(circle at bottom left, #fff 60%, transparent 100%),
+            radial-gradient(circle at bottom right, #fff 60%, transparent 100%);
+            pointer-events: none;
+        }
+        .container > * {
+            position: relative;
+            z-index: 1;
+        }
+        h1 {
+            color: #2a4d8f;
+            text-align: center;
+            margin-bottom: 0.5em;
+            letter-spacing: 1px;
+            font-size: 2em;
+        }
+        h2 {
+            color: #1e7e34;
+            margin-top: 2em;
+            margin-bottom: 0.5em;
+        }
+        ol, ul {
+            margin-left: 1.5em;
+        }
+        .tip {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 0.4em;
+            color: #2a4d8f;
+        }
+        a.button {
+            display: inline-block;
+            background: linear-gradient(90deg, #2a4d8f 60%, #1976d2 100%);
+            color: #fff;
+            padding: 0.85em 2em;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1.5em;
+            transition: background 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+            font-size: 1.1em;
+            letter-spacing: 0.5px;
+        }
+        a.button:hover {
+            background: linear-gradient(90deg, #1e355d 60%, #1976d2 100%);
+            box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
+        }
+        @media (max-width: 600px) {
+            .container {
+                padding: 1em;
+            }
+            h1 {
+                font-size: 1.3em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>How to Print QR Codes or Barcodes in Caddayn Biller</h1>
+        </header>
+        <section>
+            <p style="font-size:1.12em;">
+                <strong>Caddayn Biller</strong> allows you to generate and print QR codes or barcodes for your products, making inventory and sales management easier. This guide explains the steps and methods to print QR codes or barcodes directly from the application using a sticker printer.
+            </p>
+        </section>
+        <section>
+            <h2>Step 1: Add a Purchase Entry</h2>
+            <ol>
+                <li>Go to the <strong>Purchase</strong> module in your Caddayn Biller dashboard.</li>
+                <li>Create a new purchase entry by adding the products and specifying the quantity purchased.</li>
+                <li>Save the purchase entry.</li>
+            </ol>
+            <div class="tip">
+                <span class="icon">🛒</span>
+                <strong>Note:</strong> The quantity you enter in the purchase will determine how many QR/barcode stickers you can print.
+            </div>
+        </section>
+        <section>
+            <h2>Step 2: Print QR Codes or Barcodes</h2>
+            <ol>
+                <li>After saving the purchase entry, look for the <strong>Print QR/Barcode</strong> option (usually available in the purchase details or actions).</li>
+                <li>Click the <strong>Print QR/Barcode</strong> button.</li>
+                <li>A print preview window will open, showing the QR codes or barcodes for each item, matching the quantity you entered.</li>
+                <li>Click <strong>Print</strong> to send the codes to your connected sticker printer.</li>
+            </ol>
+            <div class="tip">
+                <span class="icon">🖨️</span>
+                <strong>Printer:</strong> Use a compatible sticker/label printer for best results. Make sure your printer settings match the label size.
+            </div>
+        </section>
+        <section>
+            <h2>Other Methods to Print Codes</h2>
+            <ol>
+                <li>
+                    <strong>From Product List:</strong>
+                    <ul>
+                        <li>Go to <strong>Items</strong> under <strong>Master Data</strong>.</li>
+                        <li>Find the product and click the <strong>Print QR/Barcode</strong> icon.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>From Product Details:</strong>
+                    <ul>
+                        <li>Open the product details page and use the <strong>Print</strong> button next to the code image.</li>
+                    </ul>
+                </li>
+                <li>
+                    <strong>Using Label Templates:</strong>
+                    <ul>
+                        <li>Navigate to <strong>Barcode/QR Templates</strong> (if available).</li>
+                        <li>Select or customize a template, choose products, and print the labels.</li>
+                    </ul>
+                </li>
+            </ol>
+        </section>
+        <section>
+            <h2>Troubleshooting</h2>
+            <ul>
+                <li>If the QR or barcode is not printing correctly, check your printer settings and ensure the correct paper/label size is selected.</li>
+                <li>Make sure your browser allows pop-ups for print preview windows.</li>
+                <li>For faded or unclear prints, try adjusting your printer quality settings.</li>
+            </ul>
+        </section>
+        <footer>
+            <a href="https://www.caddayn.com/products/caddayn-erp" target="_blank" class="button" rel="noopener">Learn more about Caddayn Biller</a>
+        </footer>
+    </div>
+</body>
+</html>
