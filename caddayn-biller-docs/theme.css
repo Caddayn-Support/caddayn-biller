@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barcode and QR Code Scanning and Printing</title>
+    <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Does the biller support BAR code or QR code scanning and printing?</h2>
+        <p>Yes, Caddayn Biller does support barcode or QR code scanning and printing.</p>
+        <h3>How to Scan Barcodes or QR Codes:</h3>
+        <ol>
+            <li>Go to the <strong>Inventory</strong> section.</li>
+            <li>Select <strong>Item Info</strong> to view the codes that can be scanned.</li>
+        </ol>
+        <h3>How to Add QR or Bar Codes:</h3>
+        <ol>
+            <li>Navigate to the <strong>Master Class</strong> section.</li>
+            <li>Select the item you want to add a barcode or QR code to.</li>
+            <li>Input the barcode or QR code in the designated fields.</li>
+        </ol>
+        <h3>How to Use Printing Options:</h3>
+        <ol>
+            <li>Choose <strong>Printer Templates</strong> from the menu.</li>
+            <li>Create or select a template by clicking on <strong>Add Template</strong>.</li>
+            <li>Proceed to print your desired image or template.</li>
+        </ol>
+    </div>
+</body>
+</html>
