@@ -5,37 +5,95 @@
     <title>I need to keep a good customer relationship. Does the software support this? | Caddayn Biller</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Learn how Caddayn Biller helps you build and maintain strong customer relationships with detailed customer profiles and data management.">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
     <link rel="stylesheet" href="theme.css">
+    <style>
+        .logo img {
+            width: 320px;
+            max-width: 90vw;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13));
+            transition: transform 0.2s;
+        }
+        .logo img:hover {
+            transform: scale(1.04);
+        }
+        .icon {
+            font-size: 1.2em;
+            margin-right: 0.4em;
+            color: #3a2fd6;
+        }
+        .tip {
+            background: #e3f2fd;
+            border-left: 5px solid #3a2fd6;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .example {
+            background: #eef3fa;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            border-left: 5px solid #3a2fd6;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .benefits-list {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        @media (max-width: 700px) {
+            .logo img { width: 180px; }
+        }
+    </style>
 </head>
 <body>
-    <div class="container">
-        <header style="text-align:center;">
-            <a href="index.html" class="logo">
-                <img src="caddayn-logo.png" alt="Caddayn Logo" style="width:180px;max-width:90vw;">
+    <!-- Animated background circles -->
+    <div class="bg-circles">
+        <div class="bg-circle c1"></div>
+        <div class="bg-circle c2"></div>
+        <div class="bg-circle c3"></div>
+        <div class="bg-circle c4"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="https://www.caddayn.com/" target="_blank" rel="noopener">
+                <img src="Untitled (4).png" alt="Caddayn Logo">
             </a>
-        </header>
-        <main>
-            <h1 style="color:#3a2fd6;">I need to keep a good customer relationship. Does the software support this?</h1>
-            <p>
-                <strong>Yes, Caddayn Biller supports building and maintaining good customer relationships.</strong>
-            </p>
-            <p>
-                The software allows you to create detailed customer profiles by adding essential information such as name, contact details, occupation, education, and more. This rich customer database helps you in several ways:
-            </p>
-            <ul>
-                <li><strong>Personalize communication</strong> based on customer demographics.</li>
-                <li><strong>Track and manage customer history</strong> efficiently, including purchases and interactions.</li>
-                <li><strong>Segment customers</strong> for targeted marketing or service.</li>
-                <li><strong>Quickly access important customer details</strong> for better service delivery.</li>
-            </ul>
-            <p>
-                While Caddayn Biller primarily focuses on accurate customer data management, it lays a strong foundation for customer relationship strategies like follow-ups, personalized offers, and service improvements.
-            </p>
-            <p>
-                <strong>Advanced CRM Needs:</strong> If you're looking for more advanced CRM features such as automated reminders, customer interaction tracking, or campaign management, Caddayn Biller can be integrated with dedicated CRM tools to further enhance your customer relationship management capabilities.
-            </p>
-            <a href="index.html" class="button" style="margin-top:2em;">&#8592; Back to Support Home</a>
-        </main>
+        </div>
+    </header>
+    <div class="container">
+        <h1>I need to keep a good customer relationship. Does the software support this?</h1>
+        <p style="font-size:1.15em;">
+            <span class="icon">🤝</span>
+            <strong>Yes, Caddayn Biller supports building and maintaining good customer relationships.</strong>
+        </p>
+        <h2>How Caddayn Biller Helps with Customer Relationships</h2>
+        <ul>
+            <li><span class="icon">📇</span> <strong>Personalize communication</strong> based on customer demographics.</li>
+            <li><span class="icon">📜</span> <strong>Track and manage customer history</strong> efficiently, including purchases and interactions.</li>
+            <li><span class="icon">🎯</span> <strong>Segment customers</strong> for targeted marketing or service.</li>
+            <li><span class="icon">🔍</span> <strong>Quickly access important customer details</strong> for better service delivery.</li>
+        </ul>
+        <div class="tip">
+            <span class="icon">💡</span>
+            <strong>Tip:</strong> Use detailed customer profiles to personalize offers and improve service.
+        </div>
+        <h2>Advanced CRM Needs</h2>
+        <p>
+            <span class="icon">🚀</span>
+            If you're looking for more advanced CRM features such as automated reminders, customer interaction tracking, or campaign management, Caddayn Biller can be integrated with dedicated CRM tools to further enhance your customer relationship management capabilities.
+        </p>
+        <footer style="margin-top:2em;">
+            <a href="index.html" class="button">&#8592; Back to Support Home</a>
+        </footer>
     </div>
 </body>
 </html>

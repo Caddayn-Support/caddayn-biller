@@ -19,82 +19,113 @@
         .icon {
             font-size: 1.2em;
             margin-right: 0.4em;
-            color: #7b61ff;
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How to Manage the Same Product Under Different Brands in Caddayn Biller</title>
+    <meta name="description" content="Step-by-step guide for managing the same product under different brands and adding brands in Caddayn Biller.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
+    <link rel="stylesheet" href="theme.css">
+    <style>
+        .icon {
+            font-size: 1.2em;
+            margin-right: 0.4em;
+            color: #3a2fd6;
+        }
+        .tip {
+            background: #e3f2fd;
+            border-left: 5px solid #3a2fd6;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .example {
+            background: #eef3fa;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            border-left: 5px solid #3a2fd6;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        }
+        .benefits-list {
+            background: #e3f2fd;
+            border-left: 5px solid #1976d2;
+            padding: 1em;
+            border-radius: 10px;
+            margin-bottom: 2em;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
         }
         @media (max-width: 700px) {
-            .tip { font-size: 0.97em; }
+            .logo img { width: 180px; }
         }
     </style>
 </head>
 <body>
+    <!-- Animated background circles -->
+    <div class="bg-circles">
+        <div class="bg-circle c1"></div>
+        <div class="bg-circle c2"></div>
+        <div class="bg-circle c3"></div>
+        <div class="bg-circle c4"></div>
+    </div>
+    <header>
+        <div class="logo">
+            <a href="https://www.caddayn.com/" target="_blank" rel="noopener">
+                <img src="Untitled (4).png" alt="Caddayn Logo" style="width:320px;max-width:90vw;height:auto;display:block;margin:0 auto;filter:drop-shadow(0 6px 32px rgba(99,102,241,0.13));transition:transform 0.2s;">
+            </a>
+        </div>
+    </header>
     <div class="container">
-        <header>
-            <h1>Managing the Same Product Under Different Brands in Caddayn Biller</h1>
-        </header>
-        <section>
-            <p style="font-size:1.12em;">
-                In Caddayn Biller, you may have the same product (e.g., "Sugar") available from multiple brands (e.g., "Brand A", "Brand B"). Properly managing brands helps you track sales, purchases, and inventory for each brand separately, ensuring accurate reporting and stock management.
-            </p>
-        </section>
-        <section>
-            <h2>Why Manage Products by Brand?</h2>
+        <h1>How to Manage the Same Product Under Different Brands in Caddayn Biller</h1>
+        <p style="font-size:1.15em;">
+            In Caddayn Biller, you may have the same product (e.g., <strong>Sugar</strong>) available from multiple brands (e.g., <strong>Brand A</strong>, <strong>Brand B</strong>). Properly managing brands helps you track sales, purchases, and inventory for each brand separately, ensuring accurate reporting and stock management.
+        </p>
+        <h2>Why Manage Products by Brand?</h2>
+        <ul>
+            <li><span class="icon">📦</span> <strong>Accurate Inventory:</strong> Track stock levels for each brand individually.</li>
+            <li><span class="icon">📊</span> <strong>Better Analytics:</strong> Analyze sales and purchases by brand.</li>
+            <li><span class="icon">🔄</span> <strong>Easy Reordering:</strong> Identify which brands are selling faster or need restocking.</li>
+            <li><span class="icon">📝</span> <strong>Clear Product Listings:</strong> Avoid confusion between similar products from different brands.</li>
+        </ul>
+        <h2>Step-by-Step Guide: Add a Brand</h2>
+        <ol>
+            <li>Go to the <strong>Master</strong> module from the main menu.</li>
+            <li>Select the <strong>Create</strong> submodule.</li>
+            <li>Click on <strong>Brand</strong>.</li>
+            <li>Enter the brand name (e.g., "Brand A") and any relevant details.</li>
+            <li>Click <strong>Save</strong> to add the new brand.</li>
+        </ol>
+        <div class="tip">
+            <span class="icon">💡</span>
+            <strong>Tip:</strong> Add all brands you deal with before adding products to ensure smooth product entry.
+        </div>
+        <h2>How to Attach a Brand to a Product</h2>
+        <ol>
+            <li>Go to <strong>Items</strong> under <strong>Master Data</strong>.</li>
+            <li>Select the product you want to assign a brand to.</li>
+            <li>Edit the product details and choose the appropriate brand from the dropdown.</li>
+            <li>Save the changes.</li>
+        </ol>
+        <div class="example">
+            <span class="icon">�</span>
+            <strong>Example:</strong> If you sell "Sugar" from both "Brand A" and "Brand B", create two products: "Sugar - Brand A" and "Sugar - Brand B". This allows you to track inventory and sales for each brand separately.
+        </div>
+        <h2>Benefits</h2>
+        <div class="benefits-list">
             <ul>
-                <li><strong>Accurate Inventory:</strong> Track stock levels for each brand individually.</li>
-                <li><strong>Better Analytics:</strong> Analyze sales and purchases by brand.</li>
-                <li><strong>Easy Reordering:</strong> Identify which brands are selling faster or need restocking.</li>
-                <li><strong>Clear Product Listings:</strong> Avoid confusion between similar products from different brands.</li>
+                <li><span class="icon">📦</span> Accurate inventory and sales tracking by brand</li>
+                <li><span class="icon">📊</span> Better analytics and reporting</li>
+                <li><span class="icon">🔄</span> Easier reordering and stock management</li>
             </ul>
-        </section>
-        <section>
-            <h2>How to Add a Brand in Caddayn Biller</h2>
-            <ol>
-                <li>Go to the <strong>Master</strong> module from the main menu.</li>
-                <li>Select the <strong>Create</strong> submodule.</li>
-                <li>Click on <strong>Brand</strong>.</li>
-                <li>Enter the brand name (e.g., "Brand A") and any relevant details.</li>
-                <li>Click <strong>Save</strong> to add the new brand.</li>
-            </ol>
-            <div class="tip">
-                <span class="icon">💡</span>
-                <strong>Tip:</strong> Add all brands you deal with before adding products to ensure smooth product entry.
-            </div>
-        </section>
-        <section>
-            <h2>How to Add the Same Product Under Different Brands</h2>
-            <ol>
-                <li>Go to <strong>Items</strong> under <strong>Master Data</strong>.</li>
-                <li>Click <strong>Add Product</strong>.</li>
-                <li>Enter the product name (e.g., "Sugar").</li>
-                <li>Select the appropriate <strong>Brand</strong> from the dropdown (e.g., "Brand A").</li>
-                <li>Fill in other product details (e.g., size, price, barcode).</li>
-                <li>Click <strong>Save</strong>.</li>
-                <li>Repeat the process for the same product with a different brand (e.g., "Sugar" with "Brand B").</li>
-            </ol>
-            <div class="tip">
-                <span class="icon">📝</span>
-                <strong>Note:</strong> Each brand-product combination is treated as a separate item for tracking and reporting.
-            </div>
-        </section>
-        <section>
-            <h2>Tracking and Reporting by Brand</h2>
-            <ol>
-                <li>Go to the <strong>Reports</strong> or <strong>Analytics</strong> section.</li>
-                <li>Filter or group your sales, purchases, and inventory data by <strong>Brand</strong>.</li>
-                <li>Review which brands are performing best and make informed business decisions.</li>
-            </ol>
-        </section>
-        <section>
-            <h2>Customer Care Assistant Checklist</h2>
-            <ul>
-                <li>Guide owners to add all relevant brands before adding products.</li>
-                <li>Ensure each product is linked to the correct brand during entry.</li>
-                <li>Assist in using brand-based filters in reports for better insights.</li>
-                <li>Help owners update or add new brands as their inventory changes.</li>
-            </ul>
-        </section>
-        <footer>
-            <a href="https://www.caddayn.com/products/caddayn-erp" target="_blank" class="button" rel="noopener">Learn more about Caddayn Biller</a>
-        </footer>
+        </div>
+        <h2>Conclusion</h2>
+        <p>
+            By adding brands and linking them to products, you can efficiently manage the same product under different brands in Caddayn Biller. This ensures clear reporting, accurate inventory, and better business decisions.
+        </p>
     </div>
 </body>
 </html>
