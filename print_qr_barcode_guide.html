@@ -1,29 +1,6 @@
 <!-- Title: How to Print QR Codes or Barcodes in Caddayn Biller -->
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>How to Print QR Codes or Barcodes in Caddayn Biller</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Step-by-step guide on how to print QR codes or barcodes for your products using Caddayn Biller. Learn about purchase entry, sticker printers, and troubleshooting.">
-    <meta name="keywords" content="Caddayn Biller, print QR code, print barcode, barcode printing, QR code printing, sticker printer, inventory management, purchase entry, label printing">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
-    <link rel="stylesheet" href="theme.css">
     <style>
-        .logo img {
-            width: 320px !important;
-            max-width: 320px !important;
-            min-width: 320px !important;
-            height: auto !important;
-            display: block;
-            margin: 0 auto;
-            filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13));
-            transition: transform 0.2s;
-        }
-        .logo img:hover {
-            transform: scale(1.04);
-        }
         .logo img {
             width: 320px;
             max-width: 90vw;
@@ -31,62 +8,42 @@
             display: block;
             margin: 0 auto;
             filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13));
-            transition: transform 0.2s;
+            transition: transform 0.25s cubic-bezier(.4,0,.2,1);
         }
         .logo img:hover {
-            transform: scale(1.04);
+            transform: scale(1.03);
         }
         body {
-            font-family: 'Segoe UI', Arial, sans-serif;
+            font-family: 'Inter', Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #e3f0ff 0%, #ffffff 100%);
-            color: #222;
+            background: linear-gradient(120deg, #f6f8ff 0%, #e3f0ff 100%);
+            color: #22223b;
         }
         .container {
             background: #fff;
             max-width: 900px;
-            margin: 2em auto;
+            margin: 2rem auto;
             border-radius: 18px;
-            box-shadow: 0 8px 32px rgba(44, 62, 80, 0.12);
-            padding: 2.5em 2em;
+            box-shadow: 0 4px 32px rgba(34,34,59,0.10);
+            padding: 2.5rem 2rem;
             position: relative;
-            overflow: hidden;
             z-index: 1;
         }
-        .container::before {
-            content: "";
-            position: absolute;
-            inset: 0;
-            z-index: 0;
-            border-radius: 16px;
-            /* Even color spread from all corners, white at corners, color toward center */
-            background: radial-gradient(circle at 50% 50%,
-                transparent 60%,
-                #2a4d8f 75deg 70%,
-                #1e7e34 160deg 80%,
-                #1976d2 250deg 90%,
-                #e3f0ff 360deg 100%
-            ),
-            radial-gradient(circle at top left, #fff 60%, transparent 100%),
-            radial-gradient(circle at top right, #fff 60%, transparent 100%),
-            radial-gradient(circle at bottom left, #fff 60%, transparent 100%),
-            radial-gradient(circle at bottom right, #fff 60%, transparent 100%);
-            pointer-events: none;
-        }
+        /* Remove .container::before for consistency */
         .container > * {
             position: relative;
             z-index: 1;
         }
         h1 {
-            color: #2a4d8f;
+            color: #3a2fd6;
             text-align: center;
             margin-bottom: 0.5em;
             letter-spacing: 1px;
             font-size: 2em;
         }
         h2 {
-            color: #1e7e34;
+            color: #3a2fd6;
             margin-top: 2em;
             margin-bottom: 0.5em;
         }
@@ -95,7 +52,7 @@
         }
         .tip {
             background: #e3f2fd;
-            border-left: 5px solid #1976d2;
+            border-left: 5px solid #3a2fd6;
             padding: 1em;
             border-radius: 10px;
             margin: 1em 0;
@@ -104,11 +61,11 @@
         .icon {
             font-size: 1.2em;
             margin-right: 0.4em;
-            color: #2a4d8f;
+            color: #3a2fd6;
         }
         a.button {
             display: inline-block;
-            background: linear-gradient(90deg, #2a4d8f 60%, #1976d2 100%);
+            background: linear-gradient(90deg, #3a2fd6 60%, #5b4be0 100%);
             color: #fff;
             padding: 0.85em 2em;
             border-radius: 8px;
@@ -121,19 +78,12 @@
             letter-spacing: 0.5px;
         }
         a.button:hover {
-            background: linear-gradient(90deg, #1e355d 60%, #1976d2 100%);
+            background: linear-gradient(90deg, #2a1fb6 60%, #4b3be0 100%);
             box-shadow: 0 4px 16px rgba(44, 62, 80, 0.16);
-        }
-            <a href="https://www.caddayn.com/" target="_blank" rel="noopener">
-                <img src="Untitled (4).png" alt="Caddayn Logo">
-            </a>
-            .container {
-                max-width: 98vw;
-                padding: 1.5rem 0.5rem;
-            }
         }
         @media (max-width: 700px) {
             .container { padding: 1rem; }
+            .logo img { width: 180px; }
         }
         @media (max-width: 600px) {
             .container {
@@ -144,50 +94,6 @@
             }
         }
     </style>
-</head>
-<body>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>How to Print QR Codes or Barcodes in Caddayn Biller</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Step-by-step guide on how to print QR codes or barcodes for your products using Caddayn Biller. Learn about purchase entry, sticker printers, and troubleshooting.">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
-    <link rel="stylesheet" href="theme.css">
-    <style>
-        .icon {
-            font-size: 1.2em;
-            margin-right: 0.4em;
-            color: #3a2fd6;
-        }
-        .tip {
-            background: #e3f2fd;
-            border-left: 5px solid #3a2fd6;
-            padding: 1em;
-            border-radius: 10px;
-            margin: 1em 0;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        }
-        .example {
-            background: #eef3fa;
-            padding: 1em;
-            border-radius: 10px;
-            margin: 1em 0;
-            border-left: 5px solid #3a2fd6;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        }
-        .benefits-list {
-            background: #e3f2fd;
-            border-left: 5px solid #1976d2;
-            padding: 1em;
-            border-radius: 10px;
-            margin-bottom: 2em;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        }
-        @media (max-width: 700px) {
-            .logo img { width: 180px; }
-        }
     </style>
 </head>
 <body>

@@ -8,116 +8,97 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,700&display=swap">
     <link rel="stylesheet" href="theme.css">
     <style>
-        .logo img {
-            width: 320px;
-            max-width: 90vw;
-            height: auto;
-            display: block;
-            margin: 0 auto;
-            filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13));
-            transition: transform 0.2s;
-        }
-        .logo img:hover {
-            transform: scale(1.04);
+        .tip {
+            background: #e3f2fd;
+            border-left: 5px solid #7b61ff;
+            padding: 1em;
+            border-radius: 10px;
+            margin: 1em 0;
+            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
         }
         .icon {
             font-size: 1.2em;
             margin-right: 0.4em;
-            color: #3a2fd6;
+            color: #7b61ff;
         }
-        .tip {
-            background: #e3f2fd;
-            border-left: 5px solid #3a2fd6;
-            padding: 1em;
-            border-radius: 10px;
-            margin: 1em 0;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        .logo img {
+            transition: transform 0.25s cubic-bezier(.4,0,.2,1);
         }
-        .example {
-            background: #eef3fa;
-            padding: 1em;
-            border-radius: 10px;
-            margin: 1em 0;
-            border-left: 5px solid #3a2fd6;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
-        }
-        .benefits-list {
-            background: #e3f2fd;
-            border-left: 5px solid #1976d2;
-            padding: 1em;
-            border-radius: 10px;
-            margin-bottom: 2em;
-            box-shadow: 0 2px 8px rgba(44, 62, 80, 0.04);
+        .logo img:hover {
+            transform: scale(1.03);
         }
         @media (max-width: 700px) {
-            .logo img { width: 180px; }
+            .tip { font-size: 0.97em; }
         }
     </style>
 </head>
 <body>
-    <!-- Animated background circles -->
-    <div class="bg-circles">
-        <div class="bg-circle c1"></div>
-        <div class="bg-circle c2"></div>
-        <div class="bg-circle c3"></div>
-        <div class="bg-circle c4"></div>
-    </div>
     <header>
         <div class="logo">
-            <a href="https://www.caddayn.com/" target="_blank" rel="noopener">
-                <img src="Untitled (4).png" alt="Caddayn Logo">
-            </a>
+            <img src="Untitled (4).png" alt="Caddayn Logo" style="width: 320px; max-width: 90vw; height: auto; display: block; margin: 0 auto; filter: drop-shadow(0 6px 32px rgba(99,102,241,0.13)); transition: transform 0.2s;">
         </div>
     </header>
     <div class="container">
-        <h1>What is the Use of Category? How is it Helpful for an Owner to Track?</h1>
-        <p style="font-size:1.15em;">
-            <strong>Category</strong> in Caddayn Biller is used to check which products belong to which group. Using categories, owners can group products and view analytics on sales and purchases by category. Categories can be easily created from the <strong>Master</strong> module within the <strong>Create</strong> submodule.
-        </p>
-        <h2>Why Use Categories?</h2>
-        <ul>
-            <li><span class="icon">📦</span> <strong>Organization:</strong> Easily group and manage similar products.</li>
-            <li><span class="icon">📊</span> <strong>Analytics:</strong> View sales and purchase trends by category.</li>
-            <li><span class="icon">🔎</span> <strong>Filtering:</strong> Quickly filter products, sales, and inventory by category.</li>
-            <li><span class="icon">📄</span> <strong>Reporting:</strong> Generate category-wise reports for better business decisions.</li>
-        </ul>
-        <h2>Step-by-Step Guide: Create a Category</h2>
-        <ol>
-            <li>Go to the <strong>Master</strong> module from the main menu.</li>
-            <li>Select the <strong>Create</strong> submodule.</li>
-            <li>Click on <strong>Category</strong>.</li>
-            <li>Enter the category name and any relevant details.</li>
-            <li>Click <strong>Save</strong> to add the new category.</li>
-        </ol>
-        <div class="tip">
-            <span class="icon">💡</span>
-            <strong>Tip:</strong> Use clear and descriptive names for categories (e.g., "Beverages", "Electronics").
-        </div>
-        <h2>How to Assign Products to a Category</h2>
-        <ol>
-            <li>Go to <strong>Items</strong> under <strong>Master Data</strong>.</li>
-            <li>Select the product you want to assign.</li>
-            <li>Edit the product details and choose the appropriate category from the dropdown.</li>
-            <li>Save the changes.</li>
-        </ol>
-        <h2>How to Track and Analyze by Category</h2>
-        <ol>
-            <li>Go to the <strong>Reports</strong> or <strong>Analytics</strong> section.</li>
-            <li>Filter or group your sales and purchase data by category.</li>
-            <li>Review which categories are performing best and identify trends.</li>
-        </ol>
-        <div class="tip">
-            <span class="icon">📊</span>
-            <strong>Note:</strong> Assigning all products to categories ensures accurate analytics and reporting.
-        </div>
-        <h2>Customer Care Assistant Checklist</h2>
-        <ul>
-            <li>Guide owners to create categories before adding products.</li>
-            <li>Encourage assigning every product to a category for better tracking.</li>
-            <li>Help owners use category-based reports to answer business questions.</li>
-            <li>Assist in creating new categories if existing ones do not fit a product.</li>
-        </ul>
-        <footer style="margin-top:2em;">
+        <h1 style="text-align:center;">What is the Use of Category? How is it Helpful for an Owner to Track?</h1>
+        <section>
+            <p style="font-size:1.12em;">
+                <strong>Category</strong> in Caddayn Biller is used to check which products belong to which group. Using categories, owners can group products and view analytics on sales and purchases by category. Categories can be easily created from the <strong>Master</strong> module within the <strong>Create</strong> submodule.
+            </p>
+        </section>
+        <section>
+            <h2>Why Use Categories?</h2>
+            <ul>
+                <li><strong>Organization:</strong> Easily group and manage similar products.</li>
+                <li><strong>Analytics:</strong> View sales and purchase trends by category.</li>
+                <li><strong>Filtering:</strong> Quickly filter products, sales, and inventory by category.</li>
+                <li><strong>Reporting:</strong> Generate category-wise reports for better business decisions.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to Create a Category</h2>
+            <ol>
+                <li>Go to the <strong>Master</strong> module from the main menu.</li>
+                <li>Select the <strong>Create</strong> submodule.</li>
+                <li>Click on <strong>Category</strong>.</li>
+                <li>Enter the category name and any relevant details.</li>
+                <li>Click <strong>Save</strong> to add the new category.</li>
+            </ol>
+            <div class="tip">
+                <span class="icon">💡</span>
+                <strong>Tip:</strong> Use clear and descriptive names for categories (e.g., "Beverages", "Electronics").
+            </div>
+        </section>
+        <section>
+            <h2>How to Assign Products to a Category</h2>
+            <ol>
+                <li>Go to <strong>Items</strong> under <strong>Master Data</strong>.</li>
+                <li>Select the product you want to assign.</li>
+                <li>Edit the product details and choose the appropriate category from the dropdown.</li>
+                <li>Save the changes.</li>
+            </ol>
+        </section>
+        <section>
+            <h2>How to Track and Analyze by Category</h2>
+            <ol>
+                <li>Go to the <strong>Reports</strong> or <strong>Analytics</strong> section.</li>
+                <li>Filter or group your sales and purchase data by category.</li>
+                <li>Review which categories are performing best and identify trends.</li>
+            </ol>
+            <div class="tip">
+                <span class="icon">📊</span>
+                <strong>Note:</strong> Assigning all products to categories ensures accurate analytics and reporting.
+            </div>
+        </section>
+        <section>
+            <h2>Customer Care Assistant Checklist</h2>
+            <ul>
+                <li>Guide owners to create categories before adding products.</li>
+                <li>Encourage assigning every product to a category for better tracking.</li>
+                <li>Help owners use category-based reports to answer business questions.</li>
+                <li>Assist in creating new categories if existing ones do not fit a product.</li>
+            </ul>
+        </section>
+        <footer>
             <a href="https://www.caddayn.com/products/caddayn-erp" target="_blank" class="button" rel="noopener">Learn more about Caddayn Biller</a>
         </footer>
     </div>
